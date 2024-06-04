@@ -15,5 +15,5 @@ Create a pillar file (e.g., `linuxpatch.sls`) with the following content:
 
 ```yaml
 linuxpatch:
-  api_key: 'your_api_key_here'  # Replace with your actual API key
+  lp_key: 'your_lp_key_here'  # Replace with your actual API key
 ```

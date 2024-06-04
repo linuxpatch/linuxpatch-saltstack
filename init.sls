@@ -1,4 +1,4 @@
-{% from "linuxpatch-saltstack/map.jinja" import api_key %}
+{% from "linuxpatch-saltstack/map.jinja" import lp_key %}
 
 linuxpatch:
   file.managed:
@@ -12,7 +12,7 @@ run_linuxpatch_script:
   cmd.run:
     - name: /tmp/install.sh
     - env:
-        API_KEY: {{ api_key }}
+        LP_KEY: {{ lp_key }}
     - cwd: /tmp
     - require:
       - file: linuxpatch
