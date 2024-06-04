@@ -1,0 +1,2 @@
+{% set linuxpatch = salt['pillar.get']('linuxpatch', {}) %}
+{% set api_key = linuxpatch.get('api_key', 'your_api_key_here') %}
